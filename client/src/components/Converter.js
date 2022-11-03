@@ -3,7 +3,6 @@ import { Button, Col, Form, Jumbotron, Spinner } from "react-bootstrap";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
 import io from "socket.io-client";
 
-// const server = [render_url];
 const server = "http://localhost:5000";
 const socket = io(server);
 

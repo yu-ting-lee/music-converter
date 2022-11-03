@@ -58,7 +58,7 @@ const getFile = (req, res, io) => {
     let pass1 = new stream.PassThrough();
     let pass2 = new stream.PassThrough();
 
-    const dl = ytdl(track.url, { quality: "highest" });
+    const dl = ytdl(track.url, { filter: "audioandvideo", quality: "highest" });
     dl.on("error", (err) => error_handler("YTDL", err, res));
     dl.on("progress", (_, d, total) => {
       let p = ((d / total) * 100).toFixed(2);
@@ -88,7 +88,7 @@ const getFile = (req, res, io) => {
     let pass1 = new stream.PassThrough();
     let pass2 = new stream.PassThrough();
 
-    const dl = ytdl(t.url, { quality: "highest" });
+    const dl = ytdl(track.url, { filter: "audioandvideo", quality: "highest" });
     dl.on("error", (err) => error_handler("YTDL", err, res));
     dl.on("progress", (_, d, total) => {
       let p = ((d / total) * 100).toFixed(2);
