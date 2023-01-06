@@ -2,7 +2,7 @@
 
 A website that can convert YouTube video or playlist URLs into files
 
-![Imgur](https://imgur.com/MjA8Sn6.png)
+![Imgur](https://imgur.com/uS7IHC3.png)
 
 ## Support Options
 
