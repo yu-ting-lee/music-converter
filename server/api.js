@@ -1,7 +1,7 @@
 const archiver = require("archiver");
 const ffmpeg = require("fluent-ffmpeg");
 const stream = require("stream");
-const ytdl = require("ytdl-core");
+const ytdl = require("@distube/ytdl-core");
 const ytpl = require("ytpl");
 
 const error_handler = (type, err, res) => {
